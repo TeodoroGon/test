@@ -1,29 +1,18 @@
 import styles from './App.module.scss';
-import ViteSvg from './assets/vite.svg';
-import TypescriptSvg from './assets/typescript.svg';
+import LogotipoPng from './assets/logotipo.png';
+import BotNDeRegistroPng from './assets/botón de registro.png';
+import ImGenesPng from './assets/imágenes.png';
 
 function App() {
     return (
         <div className={styles.App}>
-            <h2>Welcome to your App Component 🎉</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drag here elements from + Add <b>Elements</b> Panel
+            <span className={styles.span1}>
+                Un proyecto que busca cerrar la brecha de género e incentivar la participación de
+                las mujeres en la Ciencia, Tecnología, Ingeniería y Matemáticas.
             </span>
-            <p
-                style={{
-                    fontSize: '12px',
-                    marginTop: '80px',
-                    display: 'flex',
-                    gap: '3px',
-                    justifyContent: 'center',
-                }}
-            >
-                This project is using <img src={ViteSvg} width="12" />+
-                <img src={TypescriptSvg} width="12" />
-                Visit vitejs.dev to learn more.
-            </p>
+            <img src={LogotipoPng} alt="" className={styles.img1} />
+            <img src={BotNDeRegistroPng} alt="" className={styles.button1} />
+            <img src={ImGenesPng} alt="" className={styles.img2} />
         </div>
     );
 }
